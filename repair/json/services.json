@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Systems Service One",
+    "description": "Maecenas egestas condimentum fringilla. Donec viverra et tellus sed ornare. Suspendisse potenti.",
+    "price_range": "100 - 200 E"
+
+  },
+  {
+    "name": "Software Service Two",
+    "description": "Donec ullamcorper, nisl a pulvinar posuere, urna enim interdum risus, vitae posuere sem enim et nulla. Sed varius cursus dictum. Duis pellentesque, sapien in interdum volutpat, mi velit volutpat lectus, id venenatis urna eros ac ligula.",
+    "price_range": "500 - 700 E"
+
+  },
+  {
+    "name": "Systems Service Three",
+    "description": "Maecenas egestas condimentum fringilla. Donec viverra et tellus sed ornare. Suspendisse potenti.",
+    "price_range": "1000 E"
+
+  }
+]

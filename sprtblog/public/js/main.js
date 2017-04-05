@@ -14,3 +14,18 @@ $(document).ready(() => {
         })
     })
 });
+
+$('.article-delete').on('click', (e) => {
+    $target = $(e.target);
+    $.ajax({
+        type:'DELETE',
+        url: '/articles/delete/'+$target.attr('data-article-id'),
+        success: (response) => {
+            alert('Article Removed');
+            window.location.href='/'
+        },
+        error: (error) => {
+            console.log(error);
+        }
+    })
+})

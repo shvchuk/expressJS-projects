@@ -32,4 +32,38 @@ router.post('/add', (req, res, next) => {
     })
 });
 
+// edit article - POST
+router.post('/edit/:id', (req, res, next) => {
+    let article = new Article();
+    const query = {_id: req.params.id};
+    const update = {
+        title: req.body.title,
+        subtitle: req.body.subtitle,
+        category: req.body.category,
+        author: req.body.author,
+        body: req.body.body
+    };
+
+    Article.updateArticle(query, update, {}, (err, article) => {
+        if(err){
+            res.send(err);
+        }
+
+        res.redirect('/manage/articles');
+    })
+});
+
+// delete article - DELETE
+router.delete('/delete/:id', (req, res, next) => {
+    const query = {_id: req.params.id};
+
+    Article.removeArticle(query, (err, article) => {
+        if(err){
+            res.send(err);
+        }
+
+        res.status(200);
+    })
+});
+
 module.exports = router;

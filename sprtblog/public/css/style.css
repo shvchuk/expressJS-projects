@@ -27,3 +27,13 @@
     color: white;
 }
 
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+.showcase{
+    background: url('../img/show.jpg') no-repeat 0 -150px;
+    min-height: 400px;
+    color: white;
+}
+
